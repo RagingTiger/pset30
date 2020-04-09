@@ -5,3 +5,4 @@ numpy
 pyparsing
 python-dateutil
 six
+fire
