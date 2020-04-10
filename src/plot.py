@@ -3,7 +3,7 @@ import math
 import matplotlib.pyplot as plt
 import numpy as np
 
-n = 1
+n = 2
 m = 1
 x = np.array(range(-20, 20))
 
@@ -25,6 +25,8 @@ dy1 = 2*x
 dy2 = dy1
 dy3 = 2*x + 1
 dy4 = 2*x - 1
+tst1 = x**2 + 13 + x
+tst2 = x**2 - (2 + x)
 
 # Create the plot
 # plt.plot(n,x1, label="(2 - n^2)/2n")
@@ -36,15 +38,18 @@ dy4 = 2*x - 1
 # plt.plot(x, eq2, label="x^2 - 2 + x")
 # plt.plot(x, ysqr, label="x^2 + 2x + 1")
 plt.plot(x, y1, label="A: x^2", linestyle='--', marker='o')
-plt.plot(x, y2, label="B: x^2 + 2", linestyle='--', marker='v')
+# plt.plot(x, y2, label="B: x^2 + 2", linestyle='--', marker='v')
 # plt.plot(x, y3, label="C: x^2 - 2 + x", linestyle='--', marker='v')
 # plt.plot(x, y4, label="D: x^2 - 2 - x", linestyle='--', marker='v')
-# plt.plot(x, y5, label="E: x^2 + 2xn + n^2", linestyle='--', marker='o')
-# plt.plot(x, y6, label="F: x^2 - 2xn + n^2", linestyle='--', marker='o')
-plt.plot(x, dy1, label="dA: 2x", linestyle='--', marker='x')
+plt.plot(x, y5, label="E: x^2 + 2xn + n^2", linestyle='--', marker='o')
+plt.plot(x, y6, label="F: x^2 - 2xn + n^2", linestyle='--', marker='o')
+# plt.plot(x, dy1, label="dA: 2x", linestyle='--', marker='x')
 # plt.plot(x, dy2, label="dB: 2x", linestyle='--', marker='x')
-plt.plot(x, dy3, label="dB: 2x + 1", linestyle='--', marker='x')
-plt.plot(x, dy4, label="dB: 2x - 1", linestyle='--', marker='x')
+# plt.plot(x, dy3, label="dB: 2x + 1", linestyle='--', marker='x')
+# plt.plot(x, dy4, label="dB: 2x - 1", linestyle='--', marker='x')
+plt.plot(x, tst1, label="G: x^2 + 13 + x", linestyle='--', marker='v')
+plt.plot(x, tst2, label="H: x^2 - (2 + x)", linestyle='--', marker='v')
+
 
 # Create labels
 # plt.ylabel('x or y^2')
