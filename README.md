@@ -19,6 +19,10 @@ $ source venv/bin/activate
 $ pip install -r src/requirements.txt
 $ python src/plot.py
 ```
+
+# TODO
+  + Research Plotly for JS
+
 ## References
 1. Mathematical Recreations,
    Maurice Kraitchik - Dover - 1953
